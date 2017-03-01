@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria do Magrim</title>
+</head>
+<body>
+    {% for galeria in galerias %}
+        <h1>{{ galeria.nome }}</h1> <br>
+        {% for imagemurl in galeria.imagens %}
+            <div> <img src="{{ imagemurl }}"></div>
+        {% endfor %}
+    {% endfor %} ZZ
+</body>
+</html>
